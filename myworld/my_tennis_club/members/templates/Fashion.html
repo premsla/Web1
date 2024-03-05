@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Stylish Website</title>
+    <style>
+        .addToCartButton {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        /* Additional styles for the cart page */
+        #cartPage {
+            display: none;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .cart-item img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        #cartItemsContainer {
+            margin-top: 20px;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:  #fadddd;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color:  #8b8a89;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 70%;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+
+        section {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(235, 7, 125, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Fashion</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Women</a></li>
+                <li><a href="men">Men</a></li>
+                <li><a href="kids">Kids</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="all_brands">All Brands</a></li>
+                <li><a href="cartPage">Add to card</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div>
+            <input type="text" placeholder="Search for products, styles, brands">
+            <button type="button">Search</button>
+        </div>
+    </main>
+    </header>
+
+    <section>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/3/0/tr:w-480,/30e9df0PSTANAR_1.jpg?rnd=20200526195200" alt="Product 1">
+            <div class="product-info">
+                <h2>GAYRAA</h2>
+                <p>Aqua Blue Cotton Floral Anarkali Pant with Dupatta (Set of 3)</p>
+                <p>$99.99</p>
+                <button class="addToCartButton" data-name="GAYRAA" data-price="99.99">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/7/9/tr:w-480,/79b4e45NF_STYLU00001373_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Stylum</h2>
+                <p>Womens Bandhej Printed & Embroidered Rayon Kurti Sharara Dupatta Green (Set of 3)</p>
+                <p>$1999</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/a/0/tr:w-480,/a0ee88dQOMN_T1200-52_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>QOMN</h2>
+                <p>Blue Printed A-Line Top</p>
+                <p>$749</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/1/6/tr:w-480,/16129d9ORN084_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>ORDINAREE</h2>
+                <p>Pink Flambé Short Dress</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/b/9/tr:w-480,/b9dddd4N2014_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Gillori</h2>
+                <p>Rani Pink Flared Suit (Set of 3)</p>
+                <p>$1,299</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/a/1/tr:w-480,/a15649434_1_0aa3e51f.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Anubhutee</h2>
+                <p>Women Navy Blue Ethnic Motifs Panelled Kurti With Pant With Dupatta (set Of 3)</p>
+                <p>$2,499</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/5/e/tr:w-480,/5e9f48aKPDPINKZAYLA_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Stylum</h2>
+                <p>Womens Floral Printed Cotton Pleated Kurta Palazzo Dupatta (Set of 3)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/8/f/tr:w-480,/8f8890ciris-purple_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Autumnalane</h2>
+                <p>Iris Purple Embroidered Co-ord Set</p>
+                <p>$2,300</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/d/d/tr:w-480,/dd336dfDRSGRACE_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Stylum</h2>
+                <p>Off White Stylum Womens Printed Rayon Flared Dress</p>
+                <p>$726</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/3/0/tr:w-480,/30e9df0PEN_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>GAYRAA</h2>
+                <p>Purple Embroidered work</p>
+                <p>$1,945</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/3/6/tr:w-480,/369eaedT-213977_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>The Shouled Store</h2>
+                <p>Description of Product 2.</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/4/e/tr:w-250,/4e077dcNFTD_TWDR164_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Product 2</h2>
+                <p>Description of Product 2.</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/5/b/tr:w-480,/5b8a203SS23SQSIKKIM_PCH_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Style Quotient</h2>
+                <p>Women Peach Self Design Lace Regular Smart Casual Top</p>
+                <p>$945</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/4/2/tr:w-480,/423db49DFBS01263_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Fablestreet</h2>
+                <p>Black Solid Pant</p>
+                <p>$999</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/d/e/tr:w-480,/dea2687WKS10128_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>WEAVLLITE</h2>
+                <p>Cream Silk Blend Embroidered Kurta (Set of 3)</p>
+                <p>$2,999</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/6/3/tr:w-480,/637c879VC0178_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Vastramyaa</h2>
+                <p>Womens Peach & Blue Yoke Mirror Work Kurta with Pant and Dupatta (Set of 3)</p>
+                <p>$2499</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/5/b/tr:w-480,/5b81f6dNHI_NYFKAJH000458_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>KAAJH</h2>
+                <p>Blue Mirror Embellished Cotton Gown</p>
+                <p>$1,000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/7/d/tr:w-480,/7db3dcd1395_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Seerat</h2>
+                <p>Cream Jacquard Straight Kurta with Chinon Sharara & Chinon Dupatta (Set of 3)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/3/e/tr:w-480,/3ed3931NYKFF_LSDY0020_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Label Shaurya Sanadhya</h2>
+                <p>Deep Blue Patialla And Kurta With Dupatta (Set Of 3).</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/3/0/tr:w-480,/30e9df0SNGM_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>GAYRAA</h2>
+                <p>Pink Cotton Floral Printed Kurta</p>
+                <p>$1,499</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        
+
+
+
+
+        <!-- Add more product listings as needed -->
+
+    </section>
+
+    <footer>
+        <p>&copy;  All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

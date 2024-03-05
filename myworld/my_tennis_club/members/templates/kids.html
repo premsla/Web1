@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beverages</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 2px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #4CAF50;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 16px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #333;
+        }
+
+        section {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Discover Electronics Universe</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/l/p/tr:w-480,/lp20211234_1_862bc2f4.jpg?rnd=20200526195200" alt="Product 1">
+            <div class="product-info">
+                <h2>Lilpicks</h2>
+                <p>Floral Print Frilled Top With Green Trouser Set (Pack Of 2)</p>
+                <p>$99.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/a/7/tr:w-480,/a70288dKD-T-BLACKVELDHOTI_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Titrit</h2>
+                <p>Full Sleeves Embellished Top & Dupatta with Solid Dhoti Black (Set of 3)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/5/c/tr:w-480,/5cf5b19PCF25_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Pink Chick</h2>
+                <p>Layers Party Dress -navy Multi</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/1/0/tr:w-480,/1037bf2TT1858_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2> TIBER TABER</h2>
+                <p>Infant White Angrakha kurta dhoti (Set of 1)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/f/3/tr:w-480,/f3815f4PONYP-110_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>THE PONY & PEONY CO.</h2>
+                <p> Plum Pudding Maroon Corduroy Dress</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/3/d/tr:w-480,/3d58d71LPGKTS2643_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Lilpicks</h2>
+                <p>Floral Printed Net Rose Decor One Shoulder Top Sharara Multi White (Set of 2)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/e/9/tr:w-480,/e932febKS-GREENVELVET_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>PSPeaches</h2>
+                <p>Green Velvet Anarkali (Set of 3)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/b/3/tr:w-480,/b3e1581an6321_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>ANTHRILO</h2>
+                <p>Dinosaur Fun Long Sleeves 100% Cotton Pyjama - Navy (Set of 2)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/6/b/tr:w-480,/6b2a88cL-PINKBLUEJAAL_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>PSPeaches</h2>
+                <p>Pink Lehenga Choli (Set of 3)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/a/a/tr:w-480,/aa66f20PONYP-234E_5.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>THE PONY & PEONY CO.</h2>
+                <p> Rosado Pink Cotton Dress</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/3/d/tr:w-480,/3d58d71LPGKTS2648_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Lilpicks</h2>
+                <p>Mirror Empire Kurta Sharara Yellow (Set of 2)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/3/d/tr:w-480,/3d58d71LPGKTS2795_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Lilpicks</h2>
+                <p>Solid Button Down Shirt Top wit Printed Palazzo Magenta (Set of 2)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/7/2/tr:w-480,/72b261eSS359_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>THE PONY & PEONY CO.</h2>
+                <p>Bohemian Dress (Set of 2)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/2/f/tr:w-480,/2f8c2aaPCG070_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Pink Chick</h2>
+                <p>Lilac Princess Ball Gown</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/p/d/tr:w-480,/pd-41-1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Piccolo</h2>
+                <p>Black Solid Top With Pants (Set of 2)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/4/5/tr:w-480,/450a91eK22DB182RD_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>KID1</h2>
+                <p>Festive Kurta Dhoti With Printed Jacket-red (Set of 3)
+                </p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/0/a/tr:w-480,/0abcdabNC1029_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Nap Chief</h2>
+                <p>Trucks AOP T-Shirt & Shorts (Set of 2)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/9/5/tr:w-480,/95fee6eFK205_2.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Foreverkidz</h2>
+                <p> Lilac Candy Floss Tail Dress Lavender</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/e/2/tr:w-480,/e2e0f20PONYP-233A_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>THE PONY & PEONY CO.</h2>
+                <p>
+                    Marino Blue Dress with Hearts</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/3/e/tr:w-480,/3e14b5dSAKAD00002126_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>Saka Design</h2>
+                <p>Yellow Lehenga with Sequence Work and Poly Jacquard Choli (Set of 3)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/8/0/tr:w-480,/8047912TTB23_084_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>TINER TABAR</h2>
+                <p>Riwayat Bandhgala for Baby Boys-Pink</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/3/c/tr:w-480,/3c741b1BD23LC60PIA_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>BownBee</h2>
+                <p>Girls Jacquard Choli Lehenga Choli with Dupatta Pink (Set of 3)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/6/b/tr:w-480,/6b2a88cL-MAGENTASCHIFFLY_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>PSPeaches</h2>
+                <p>Magenta Lehenga Choli (Set of 3)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/6/b/tr:w-480,/6b2a88cSHA-MAGENTALEHERIYA_1.jpg?rnd=20200526195200" alt="Product 2">
+            <div class="product-info">
+                <h2>PSPeaches</h2>
+                <p>Peach Floral Sharara (Set of 3)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Add more product listings as needed -->
+
+    </section>
+
+    <footer>
+        <p>&copy;  All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

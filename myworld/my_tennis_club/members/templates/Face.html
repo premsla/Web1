@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beverages</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 2px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: hsl(120, 1%, 30%);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 16px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #333;
+        }
+
+        section {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>All Product</h1>
+    </header>
+
+   
+
+    <section>
+        <div class="product">
+            <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/f/0f9537aNYSWISSB00122_01.jpg" alt="Product 1">
+            <div class="product-info">
+                <h2>Product 1</h2>
+                <p>Swiss Beauty Long Lasting Professional Makeup Fixer Setting Spray With Vitamin E & Aloe Vera</p>
+                <p>$99.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/7/87a23b2NYSWISSB00316_001.jpg" alt="Product 2">
+            <div class="product-info">
+                <h2>Product 2</h2>
+                <p>Maybelline New York Fit Me Matte+Poreless Liquid Foundation 16H Oil Control - 128 Warm Nude.</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/c/0c6b118LAKME00000614_1.jpg" alt="Product 2">
+            <div class="product-info">
+                <h2>Product 2</h2>
+                <p>Lakmi lumi Skin Cream</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/1/d/1df1652PIXIX00000122_1.jpg" alt="Product 2">
+            <div class="product-info">
+                <h2>Product 2</h2>
+                <p>Pixi On The Glow Cream Blush</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/1/2/124180c8903380025057_1TY.jpg" alt="Product 2">
+            <div class="product-info">
+                <h2>Product 2</h2>
+                <p>Faces Canada Weightless Stay Matte Compact Vitamin E - Natural 02
+                    (9gm)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/1/d/1dce8658903380025002_1n.jpg" alt="Product 2">
+            <div class="product-info">
+                <h2>Product 2</h2>
+                <p>Faces Canada Strobe Cream, Rose Gold - Primer + Highlighter + Moisturizer With Hyaluronic Acid
+                    (30ml).</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/d/6d378a38906121643237_1.jpg" alt="Product 2">
+            <div class="product-info">
+                <h2>Product 2</h2>
+                <p>Insight Cosmetics Banana Loose Powder
+                    (40gm).</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/f/1/f1db8cdINSIG00000354_1.jpg" alt="Product 2">
+            <div class="product-info">
+                <h2>Product 2</h2>
+                <p>Insight Cosmetics Banana Loose Powder
+                    (40gm)</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Add more product listings as needed -->
+
+    </section>
+
+    <footer>
+        <p>&copy;  All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

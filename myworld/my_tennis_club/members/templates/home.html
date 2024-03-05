@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fadddd;
+            color: #0a0a0a;
+        }
+
+        
+
+        nav {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            max-height: 50px;
+            margin-right: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 15px;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* Change to your preferred highlight color */
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            margin-right: 10px;
+            padding: 10px;
+            width: 70%;
+        }
+
+        .cart-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .cart-info span {
+            margin-right: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        
+        .scroll-image {
+    width: 50%;
+    max-height: 500px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.scroll-image img {
+    width: 200%; /* Twice the width to create a scrolling effect */
+    height: 100%;
+    object-fit: cover;
+    animation: scrolling 10s linear infinite; /* Adjust the duration (10s) for the desired speed */
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Negative value to scroll to the left */
+    }
+}
+
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 90px 0;
+        }
+
+        .feature {
+            width: 30%;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            bottom: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <nav>
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMS3N2s6V2RiqX_Y54RvX9Ews-QqPSEHZUbA&usqp=CAU" alt="Your Logo">
+            <a href="#">Profile</a>
+            <a href="#">Home</a>
+            <a href="#">Men</a>
+            <a href="#">Kids</a>
+            <div class="dropdown">
+                <a href="#">Products</a>
+                <div class="dropdown-content">
+                    <a href="beauty">Beauty</a>
+                    <a href="Fashion">Fashion</a>
+                    <a href="accessories">Accessories</a>
+                    <a href="personalcare">Personal Care</a>
+                  
+                </div>
+            </div>
+            <a href="#">More</a>
+        </div>
+        <div class="search-bar">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="cart-info">
+            <span>Account</span>
+            <span>Wishlist</span>
+            <span>0</span>
+            <span>Cart</span>
+        </div>
+    </nav>
+
+    <main>
+      <!DOCTYPE html>
+      <html lang="en">
+      
+      <head>
+     
+          <style>
+              .scroll-image {
+                  width: 100%;
+                  max-height: 500px;
+                  overflow: hidden;
+                  margin-bottom: 50px;
+              }
+      
+              .scroll-images-container {
+                  display: flex;
+                  animation: scrolling 10s linear infinite;
+                  transform: translateX(-500%); /* Adjust the initial position */
+              }
+      
+              .scroll-image img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  flex: 0 0 auto;
+                  margin-right: 20px;
+              }
+      
+              @keyframes scrolling {
+                  0% {
+                      transform: translateX(0);
+                  }
+                  100% {
+                      transform: translateX(-150%); /* Adjust the final position based on the number of images */
+                  }
+              }
+          </style>
+      </head>
+      
+      <body>
+          <div class="scroll-image">
+              <div class="scroll-images-container">
+                  <img src="https://img.freepik.com/premium-photo/beautiful-young-women-summer-fashion-concept_564719-215.jpg?w=996" alt="Image 1">
+                  <img src="https://s3.envato.com/files/291606028/photo_potato_b51_018.jpg" alt="Image 2"> <!-- Replace "your-image2.jpg" with the path or URL of your second image -->
+                  <img src="https://png.pngtree.com/thumb_back/fh260/background/20230413/pngtree-makeup-skin-care-products-cosmetics-beauty-photography-advertising-background-image_2218552.jpg" alt="Image 3"> <!-- Replace "your-image3.jpg" with the path or URL of your third image -->
+                  <!-- Add more images as needed -->
+                  <img src="https://as1.ftcdn.net/v2/jpg/02/72/37/20/1000_F_272372009_IHxQbn7UIwn4troKZtkrwtaqAX4sMzMU.jpg" alt="Image 3"> <!-- Replace "your-image3.jpg" with the path or URL of your third image -->
+                  <!-- Add more images as needed -->
+              </div>
+          </div>
+      </body>
+      
+      </html>
+      
+        
+        <section>
+            <div class="feature">
+                <h2>Feature 1</h2>
+                <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/7/9/tr:w-480,/79b4e45NF_STYLU00001373_1.jpg" alt="Product Image 1" style="max-width: 400%; max-height: 400px;">
+                <p>Description of feature 1 goes here.</p>
+            </div>
+            <div class="feature">
+              <h2>Feature 1</h2>
+              <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/a/7/tr:w-480,/a70288dKD-T-BLACKVELDHOTI_1.jpg" alt="Product Image 1" style="max-width: 400%; max-height: 400px;">
+              <p>Description of feature 1 goes here.</p>
+          </div>
+          <div class="feature">
+            <h2>Feature 1</h2>
+            <img src="https://img.freepik.com/free-vector/makeup-realistic-composition_1284-18448.jpg?size=626&ext=jpg&ga=GA1.1.1852479508.1709447454&semt=ais" alt="Product Image 1" style="max-width: 400%; max-height: 300px;">
+            <p>Description of feature 1 goes here.</p>
+        </div>
+        <div class="feature">
+            <h2>Feature 1</h2>
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/1/e/tr:w-480,/1e5ec8fNTHRAD00003466_1.jpg" alt="Product Image 1" style="max-width: 400%; max-height: 400px;">
+            <p>Description of feature 1 goes here.</p>
+        </div>
+        <div class="feature">
+            <h2>Feature </h2>
+            <img src="https://www.byrdie.com/thmb/Jjkxrov4Q9drHoShT4hyl6cPY50=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/dior-5071fe95d80c4453befb89c5dddd394e.png" alt="Product Image 1" style="max-width: 300%; max-height: 300px;">
+            <p>Description of feature 1 goes here.</p>
+        </div>
+
+            <div class="feature">
+                <h2>Feature 2</h2>
+                <img src="https://t4.ftcdn.net/jpg/06/40/31/75/240_F_640317521_5tr8HLRQGDEGgsYqSZs9FzUXPa3Mig81.jpg" alt="Product Image 2" style="max-width: 300%; max-height: 350px;">
+                <p>Description of feature 2 goes here.</p>
+            </div>
+            <div class="feature">
+                <h2>Feature 3</h2>
+                <img src="https://www.collegefashion.net/wp-content/uploads/2020/04/accessories-layout.webp" alt="Product Image 3" style="max-width: 300%; max-height: 250px;">
+                <p>Description of feature 3 goes here.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Your Stylish Website. All rights reserved.
+    </footer>
+</body>
+
+</html>
